@@ -1,0 +1,47 @@
+@import "bootstrap/scss/bootstrap";
+
+@media (max-width: 992px) {
+    .jumbo {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: calc(1vw + 1.5rem);
+    }
+
+    h2 {
+        font-size: calc(0.8vw + 1.5rem);
+    }
+
+    h3 {
+        font-size: calc(0.6vw + 1.5rem);
+    }
+
+    p,
+    a {
+        font-size: calc(0.3vw + 1.5rem);
+    }
+}
+
+@media (max-width: 400px) {
+    .jumbo {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: calc(1vw + 0.9rem);
+    }
+
+    h2 {
+        font-size: calc(0.8vw + 0.9rem);
+    }
+
+    h3 {
+        font-size: calc(0.6vw + 0.9rem);
+    }
+
+    p,
+    a {
+        font-size: calc(0.3vw + 0.9rem);
+    }
+}
