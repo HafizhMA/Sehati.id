@@ -24,7 +24,7 @@ a {
 /* navbar */
 
 .navbar {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, .5);
 }
 
 header li {
@@ -38,25 +38,55 @@ header li:hover {
     font-weight: bold;
 }
 
+.navbtn {
+    background-color: white;
+    height: 40px;
+    border: #1C9509;
+    color: #1C9509;
+    width: 100px;
+}
+
 /* hero */
 
 #hero {
     color: white;
-    background-image: url("../public/assets/herobg.jpg");
+    background: rgb(0, 152, 91);
+    background: linear-gradient(162deg, rgba(0, 152, 91, 1) 0%, rgba(68, 106, 71, 1) 54%, rgba(195, 204, 196, 1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
 
-.hero-img {
-    min-height: 400px;
-}
-
 .jumbo {
     color: black;
     background-color: rgba(255, 255, 255, 0.5);
-    margin: auto;
+}
+
+.herobutton {
+    height: 50px;
+    width: 150px;
+}
+
+.herobutton .buttons {
+    height: 45px;
+    width: 150px;
+    border: #1C9509;
+    color: #1C9509;
+}
+
+.herobutton {
+    background-color: white;
+    transition: .3s;
+}
+
+.herobutton:hover {
+    background-color: #1C9509;
+}
+
+.buttons .pbutton {
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .searchBar {

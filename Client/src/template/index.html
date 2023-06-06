@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg top-0 position-fixed w-100" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg position-fixed top-0 w-100" data-bs-theme="dark">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="Sehati.id" height="80px"></a>
 
@@ -21,18 +21,28 @@
                 </button>
                 <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item me-3">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <li class="nav-item me-4">
+                            <a class="nav-link text-white" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item me-3">
-                            <a class="nav-link" href="#">Recipes</a>
+                        <li class="nav-item me-4">
+                            <a class="nav-link text-white" href="#aboutus">About Us</a>
                         </li>
-                        <li class="nav-item me-3">
-                            <a class="nav-link" href="#">Article</a>
+                        <li class="nav-item me-4">
+                            <a class="nav-link text-white" href="#teams">Team</a>
                         </li>
-                        <li class="nav-item me-3">
-                            <a class="nav-link" href="#">About Us</a>
+                        <li class="nav-item me-4">
+                            <a class="nav-link text-white" href="#article">Article</a>
                         </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link" href="#article">Register</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <button class="navbtn">Login</button>
+                        </li>
+                        <!-- <form class="d-flex me-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-dark" type="submit">Search</button>
+                        </form> -->
                     </ul>
                 </div>
             </div>
@@ -40,40 +50,43 @@
     </header>
 
     <section id="hero">
-        <div class="container-sm d-flex align-items-center hero-img">
-            <div class="jumbo text-center w-100">
-                <h1>Nutrition is the key to unlocking your full potential</h1>
-                <p>Empowering individuals to unlock their full potential through the power of nutrition</p>
+        <div class="container min-vh-100 d-flex align-items-center justify-content-between">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-6">
+                    <div class="herotitle mb-5">
+                        <h1>NUTRITION IS THE KEY TO UNLOCKING YOUR FULL POTENTIAL</h1>
+                        <p>Empowering individuals to unlock their full potential through the power of nutrition</p>
+                    </div>
+                    <div class="herobutton d-flex align-items-center">
+                        <button class="buttons">
+                            <p class="pbutton">explore</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./assets/gambarhero.png" alt="makanan">
+                </div>
             </div>
-        </div>
-        <div class="container-sm container-fluid searchBar">
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Find nutrition info about food or recipe"
-                    aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
         </div>
     </section>
 
-    <main id="main">
+    <main>
         <section id="aboutus">
             <div class="container">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-lg-6 col-md-12 mb-3">
-                        <h2>About <strong>Sehati.id</strong></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est harum, iure ab, natus, alias
-                            mollitia eius eligendi dicta totam beatae accusamus illo quos. Odio perspiciatis sed veniam
-                            dolorem quia temporibus!.</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates saepe sed dolor quasi
-                            itaque voluptatum nesciunt odit odio porro. Eius voluptates similique non modi explicabo est
-                            laboriosam dicta. Rem!.</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, odio a? Eligendi,
-                            aspernatur quod suscipit ex quis nulla ullam. Voluptatibus, ipsum. Expedita velit nam in!.
-                        </p>
-                        <button type="button" class="btn btn-outline-primary">Lorem ipsum dolor sit.</button>
+                        <h2 class="mb-5">About <strong>Sehati.id</strong></h2>
+                        <p>Kami hadir untuk memberikan solusi yang tepat bagi Anda dalam mengelola status gizi dan
+                            mencapai gaya hidup sehat. Dengan dukungan ahli gizi terbaik di Indonesia, kami menyediakan
+                            layanan konsultasi online yang personal dan rekomendasi diet yang sesuai dengan kebutuhan
+                            Anda.</p>
+                        <p> Temukan artikel-artikel informatif tentang gizi kesehatan, nutrisi, dan tips hidup sehat di
+                            blog kami. Kami juga menyediakan kuis interaktif yang akan menguji pengetahuan Anda seputar
+                            gizi dan membantu Anda memahami pentingnya pola makan yang seimbang.</p>
+                        <!-- <button type="button" class="btn btn-outline-primary">Lorem ipsum dolor sit.</button> -->
                     </div>
                     <div class="col-lg-6 col-md-12">
-                        <img src="asset/pineapple.jpg" alt="nanas" class="mainfood">
+                        <img src="./assets/logohijau.png" alt="nanas" class="logo">
                     </div>
                 </div>
             </div>
@@ -82,7 +95,7 @@
         <section id="teams">
             <div class="container">
                 <div class="row text-center mb-3">
-                    <div class="col-12">
+                    <div class="col-12" style="color: #1C9509;">
                         <h3>Meet Our</h3>
                         <h2><strong>Sehati.id Team</strong></h2>
                     </div>
@@ -90,37 +103,33 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
                         <div class="card">
-                            <img src="asset/profile.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                            <img src="./assets/profile.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text fw-bold">Deni</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
                         <div class="card">
-                            <img src="asset/profile.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                            <img src="./assets/profile.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text fw-bold">Aini</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
                         <div class="card">
-                            <img src="asset/profile.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                            <img src="./assets/profile.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text fw-bold">Hafizh</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
                         <div class="card">
-                            <img src="asset/profile.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                            <img src="./assets/profile.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text fw-bold">Alan</p>
                             </div>
                         </div>
                     </div>
