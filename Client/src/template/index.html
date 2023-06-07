@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg position-fixed top-0 w-100" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg position-fixed top-0 w-100" data-bs-theme="dark" style="z-index: 99;">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="Sehati.id" height="80px"></a>
 
@@ -25,19 +25,22 @@
                             <a class="nav-link text-white" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item me-4">
-                            <a class="nav-link text-white" href="#aboutus">About Us</a>
+                            <a class="nav-link text-white" href="#">CALCULATOR</a>
                         </li>
                         <li class="nav-item me-4">
-                            <a class="nav-link text-white" href="#teams">Team</a>
+                            <a class="nav-link text-white" href="#">RECIPE</a>
                         </li>
                         <li class="nav-item me-4">
-                            <a class="nav-link text-white" href="#article">Article</a>
+                            <a class="nav-link text-white" href="#">FORUM</a>
                         </li>
                         <li class="nav-item me-4">
-                            <a class="nav-link" href="#article">Register</a>
+                            <a class="nav-link text-white" href="#">ARTICLE</a>
                         </li>
                         <li class="nav-item me-4">
-                            <button class="navbtn">Login</button>
+                            <a class="nav-link" href="#">REGISTER</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <button class="navbtn">LOGIN</button>
                         </li>
                         <!-- <form class="d-flex me-3" role="search">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -136,6 +139,82 @@
                 </div>
             </div>
         </section>
+
+        <section id="artikel">
+            <div class="container">
+                <div class="judulartikel mb-3">
+                    <h3>ARTIKEL</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img src="./assets/artikel1.png" class="card-img-top" alt="..." height="300px">
+                            <!-- <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img src="./assets/artikel2.png" class="card-img-top" alt="..." height="300px">
+                            <!-- <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img src="./assets/artikel3.png" class="card-img-top" alt="..." height="300px">
+                            <!-- <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="question">
+            <section id="contact">
+                <div class="container-lg">
+
+                    <div class="text-center">
+                        <h2 style="color: #1C9509;">Question</h2>
+                    </div>
+                    <div class="row justify-content-center my-3">
+                        <div class="col-lg-10 bg-white rounded-3" style="padding: 40px;">
+                            <form>
+                                <label for="subject" class="form-label fw-bold">CARI DAN PILIH TOPIK</label>
+                                <div class="mb-4 input-group">
+                                    <select class="form-select" id="subject">
+                                        <option value="diet" selected>diet</option>
+                                        <option value="makanan">makanan</option>
+                                        <option value="olahraga">olahraga</option>
+                                    </select>
+                                </div>
+                                <label for="judul" class="form-label fw-bold">JUDUL</label>
+                                <div class="mb-4 input-group">
+                                    <input type="text" id="judul" class="form-control" />
+                                </div>
+                                <label for="" class="form-label fw-bold">DETAIL PERTANYAAN</label>
+                                <div class="mb-4form-floating">
+                                    <textarea class="form-control" id="query" style="height: 140px"
+                                        placeholder="query"></textarea>
+                                </div>
+                                <div class="mb-4 text-end mt-3">
+                                    <button type="submit" class="btn" style="padding: 10px 20px;">Cancel</button>
+                                    <button type="submit" class="btn"
+                                        style="color: white; background-color: #1C9509; padding: 10px 20px;">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section> cards
     </main>
 
     <footer class="bg-light text-center text-lg-start">
