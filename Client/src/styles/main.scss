@@ -1,5 +1,9 @@
 @import "bootstrap/scss/bootstrap";
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -58,18 +62,13 @@ header li:hover {
     background-position: center;
 }
 
-.jumbo {
-    color: black;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
 .herobutton {
     height: 50px;
     width: 150px;
 }
 
 .herobutton .buttons {
-    height: 45px;
+    height: 40px;
     width: 150px;
     border: #1C9509;
     color: #1C9509;
@@ -133,11 +132,6 @@ header li:hover {
     color: #1C9509;
 }
 
-#question {
-    padding: 100px 0;
-    background-color: #F3FFF4;
-}
-
 /* footer */
 
 footer {
@@ -151,4 +145,8 @@ footer {
 
 .footerlistnav li a {
     text-decoration: none;
+}
+
+.footerlist {
+    display: flex;
 }

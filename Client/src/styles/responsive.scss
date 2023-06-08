@@ -1,9 +1,6 @@
 @import "bootstrap/scss/bootstrap";
 
 @media (max-width: 992px) {
-    .jumbo {
-        text-align: center;
-    }
 
     h1 {
         font-size: calc(1vw + 1.5rem);
@@ -21,12 +18,27 @@
     a {
         font-size: calc(0.3vw + 1.5rem);
     }
+
+    #hero {
+        text-align: center;
+    }
+
+    .herobutton {
+        margin: 0 auto;
+    }
+
+    #hero img {
+        display: none;
+    }
+}
+
+@media (max-width: 505px) {
+    .aboutuslogo {
+        display: none;
+    }
 }
 
 @media (max-width: 400px) {
-    .jumbo {
-        text-align: center;
-    }
 
     h1 {
         font-size: calc(1vw + 0.9rem);
