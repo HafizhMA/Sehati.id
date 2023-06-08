@@ -108,6 +108,69 @@ header li:hover {
     color: rgb(45, 44, 44);
 }
 
+#calculator {
+    background-color: #F3FFF4;
+    padding: 100px 0 0 0;
+}
+
+.judulcalculator {
+    color: #1C9509;
+}
+
+/* Ganti warna latar belakang track */
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: green;
+}
+
+/* Ganti warna latar belakang thumb */
+input[type="range"]::-webkit-slider-thumb {
+    background-color: rgb(39, 164, 254);
+}
+
+/* Ganti warna latar belakang track di Firefox */
+input[type="range"]::-moz-range-track {
+    background-color: green;
+}
+
+/* Ganti warna latar belakang thumb di Firefox */
+input[type="range"]::-moz-range-thumb {
+    background-color: rgb(39, 164, 254);
+}
+
+/* Ganti warna latar belakang track di IE/Edge */
+input[type="range"]::-ms-track {
+    background-color: green;
+}
+
+/* Ganti warna latar belakang thumb di IE/Edge */
+input[type="range"]::-ms-thumb {
+    background-color: rgb(39, 164, 254);
+}
+
+.box-inputs {
+    height: 60px;
+    box-shadow: 4px 4px 5px -3px rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: 4px 4px 5px -3px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 4px 4px 5px -3px rgba(0, 0, 0, 0.26);
+}
+
+.box-input {
+    height: 60px;
+    box-shadow: 4px 4px 5px -3px rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: 4px 4px 5px -3px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 4px 4px 5px -3px rgba(0, 0, 0, 0.26);
+}
+
+.btn-calculator {
+    width: 116px;
+    height: 60px;
+    transition: 0.3s;
+}
+
+.btn-calculator:hover {
+    transform: scale(1.1);
+}
+
 #teams {
     background-color: #F3FFF4;
     padding: 100px 0;
