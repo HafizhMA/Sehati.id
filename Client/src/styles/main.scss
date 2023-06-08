@@ -28,7 +28,7 @@ a {
 /* navbar */
 
 .navbar {
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 header li {
@@ -40,14 +40,6 @@ header li:hover {
     transform: scale(1.2);
     color: black;
     font-weight: bold;
-}
-
-.navbtn {
-    background-color: white;
-    height: 40px;
-    border: #1C9509;
-    color: #1C9509;
-    width: 100px;
 }
 
 /* hero */
@@ -184,15 +176,6 @@ input[type="range"]::-ms-thumb {
     width: 100%;
     height: 500px;
     object-fit: cover;
-}
-
-#artikel {
-    background-color: #F3FFF4;
-    padding: 100px 0;
-}
-
-.judulartikel h3 {
-    color: #1C9509;
 }
 
 /* footer */
