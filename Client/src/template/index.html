@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg position-fixed top-0 w-100" data-bs-theme="dark" style="z-index: 99;">
+        <nav class="navbar navbar-expand-lg position-absolute w-100" data-bs-theme="dark" style="z-index: 99;">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="Sehati.id" height="80px"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -22,9 +22,6 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item me-4">
                             <a class="nav-link text-white" aria-current="page" href="#">HOME</a>
-                        </li>
-                        <li class="nav-item me-4">
-                            <a class="nav-link text-white" href="#">CALCULATOR</a>
                         </li>
                         <li class="nav-item me-4">
                             <a class="nav-link text-white" href="#">RECIPE</a>
@@ -39,7 +36,7 @@
                             <a class="nav-link" href="#">REGISTER</a>
                         </li>
                         <li class="nav-item me-4">
-                            <button class="navbtn">LOGIN</button>
+                            <button class="btn" style="background-color: white; color: #1C9509;">LOGIN</button>
                         </li>
                         <!-- <form class="d-flex me-3" role="search">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -88,7 +85,71 @@
                         <!-- <button type="button" class="btn btn-outline-primary">Lorem ipsum dolor sit.</button> -->
                     </div>
                     <div class="col-lg-6 col-md-12 text-center">
-                        <img src="./assets/logohijau.png" alt="logokami" class="aboutuslogo">
+                        <img src="./assets/logohijau.png" alt="logo" class="aboutuslogo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="calculator">
+            <div class="container-lg">
+                <div class="judulcalculator text-center mb-3">
+                    <h2>KALKULATOR INDEKS MASSA TUBUH</h2>
+                </div>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <form class="bg-white rounded-3 w-100" style="padding: 30px;">
+                            <div class="jk d-flex align-items-center mb-4">
+                                <label for="" class="form-label me-4 fw-bold">JENIS KELAMIN</label>
+                                <select class="form-select box-inputs" aria-label="Default select example">
+                                    <option selected disabled>Jenis Kelamin</option>
+                                    <option value="1">Laki-Laki</option>
+                                    <option value="2">Perempuan</option>
+                                </select>
+                            </div>
+                            <div class="tanggal-lahir d-flex align-items-center mb-4">
+                                <label for="" class="form-label me-4 fw-bold">TANGGAL LAHIR</label>
+                                <select id="tanggalDropdown" class="form-select me-3 box-inputs"
+                                    aria-label="Default select example">
+                                    <option selected disabled>Tanggal</option>
+                                </select>
+                                <select id="bulanDropdown" class="form-select me-3 box-inputs"
+                                    aria-label="Default select example">
+                                    <option selected disabled>Bulan</option>
+                                </select>
+                                <select id="tahunDropdown" class="form-select me-3 box-inputs"
+                                    aria-label="Default select example">
+                                    <option selected disabled>Tahun</option>
+                                </select>
+                            </div>
+                            <div class="tinggi-badan d-flex align-items-center mb-4">
+                                <label for="" class="form-label me-4 fw-bold">TINGGI BADAN</label>
+                                <input type="number" class="form-control box-input" id="">
+                                <label class="form-label me-3">CM</label>
+                                <input type="range" class="form-range" id="customRange1" style="max-width: 700px;">
+                            </div>
+                            <div class="berat-badan d-flex align-items-center mb-4">
+                                <label for="" class="form-label me-4 fw-bold">BERAT BADAN</label>
+                                <input type="number" class="form-control box-input" id="">
+                                <label class="form-label me-3">KG</label>
+                                <input type="range" class="form-range" id="customRange1" style="max-width: 700px;">
+                            </div>
+                            <div class="aktivitas d-flex align-items-center mb-4 flex-wrap">
+                                <label for="" class="form-label me-4 fw-bold mb-3">AKTIVITAS</label>
+                                <button type="button" class="btn btn-calculator me-3 mb-3 box-input"
+                                    style="background-color: white;">Ringan</button>
+                                <button type="button" class="btn btn-calculator me-3 mb-3 box-input"
+                                    style="background-color: white;">Sedang</button>
+                                <button type="button" class="btn btn-calculator me-3 mb-3 box-input"
+                                    style="background-color: white;">Berat</button>
+                                <button type="button" class="btn btn-calculator me-3 mb-3 box-input"
+                                    style="background-color: white;">Sangat Berat</button>
+                            </div>
+                            <div class="text-center my-5">
+                                <button type="submit" class="btn-calculator text-white"
+                                    style="background-color: green;">HITUNG</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -133,43 +194,6 @@
                             <div class="card-body text-center">
                                 <p class="card-text fw-bold">Alan</p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="artikel">
-            <div class="container">
-                <div class="judulartikel mb-3">
-                    <h3>ARTIKEL</h3>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                        <div class="card">
-                            <img src="./assets/artikel1.png" class="card-img-top" alt="..." height="300px">
-                            <!-- <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                        <div class="card">
-                            <img src="./assets/artikel2.png" class="card-img-top" alt="..." height="300px">
-                            <!-- <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                        <div class="card">
-                            <img src="./assets/artikel3.png" class="card-img-top" alt="..." height="300px">
-                            <!-- <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                            </div> -->
                         </div>
                     </div>
                 </div>
