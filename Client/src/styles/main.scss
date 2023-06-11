@@ -46,8 +46,6 @@ header li:hover {
 
 #hero {
     color: white;
-    background: rgb(0, 152, 91);
-    background: linear-gradient(162deg, rgba(0, 152, 91, 1) 0%, rgba(68, 106, 71, 1) 54%, rgba(195, 204, 196, 1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -78,11 +76,6 @@ header li:hover {
 .buttons .pbutton {
     font-weight: bold;
     font-size: 24px;
-}
-
-.searchBar {
-    width: 50%;
-    padding-bottom: 200px;
 }
 
 /* main */
@@ -178,6 +171,29 @@ input[type="range"]::-ms-thumb {
     object-fit: cover;
 }
 
+#artikel {
+    background-color: #F3FFF4;
+    padding: 100px 0;
+}
+
+.judulartikel h3 {
+    color: #1C9509;
+}
+
+#recipecard {
+    background-color: #F3FFF4;
+    padding: 100px 0;
+}
+
+.card-makanan {
+    background-color: rgba(239, 93, 168, 0.46);
+}
+
+#question {
+    padding: 100px 0;
+    background-color: #F3FFF4;
+}
+
 /* footer */
 
 footer {
@@ -195,4 +211,50 @@ footer {
 
 .footerlist {
     display: flex;
+}
+
+// Login-register page
+.authContainer {
+    color: white;
+    background: rgb(0, 152, 91);
+    background: linear-gradient(162deg, rgba(0, 152, 91, 1) 0%, rgba(68, 106, 71, 1) 54%, rgba(195, 204, 196, 1) 100%);
+    padding: 200px 0;
+}
+
+
+.registerbox {
+    background-color: rgba(0, 0, 0, 0.50);
+    padding: 30px;
+}
+
+
+// Recipe Page
+
+#heroRecipe {
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url('../public/assets/herobg2.png');
+}
+
+.jumbo {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: auto;
+}
+
+.searchBar {
+    width: 50%;
+    padding-bottom: 200px;
+}
+
+#detail-makanan {
+    padding: 150px 0;
+    background-color: #F3FFF4;
+}
+
+.detail-makanan-container {
+    background-color: rgba(239, 93, 168, 0.46);
 }
