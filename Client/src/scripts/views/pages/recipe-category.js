@@ -1,7 +1,8 @@
 import RecipeSource from '../../data/recipe-source';
-import { createAllCategoryTemplate } from '../templates/template-creator';
+import UrlParser from '../../routes/url-parser';
+import { createRecipeCategoryTemplate } from '../templates/template-creator';
 
-const Recipe = {
+const Category = {
   async render() {
     return `
     <section id="heroRecipe" class="min-vh-100 d-flex align-items-center justify-content-center">
@@ -23,12 +24,13 @@ const Recipe = {
   },
 
   async afterRender() {
-    const recipes = await RecipeSource.getAllCategory();
+    const url = UrlParser.parseActiveUrlWithoutCombiner();
+    const recipes = await RecipeSource.getCategoryRecipe(url.id);
     const recipesContainer = document.querySelector('#recipe-category');
     recipes.forEach((recipe) => {
-      recipesContainer.innerHTML += createAllCategoryTemplate(recipe);
+      recipesContainer.innerHTML += createRecipeCategoryTemplate(recipe);
     });
   },
 };
 
-export default Recipe;
+export default Category;
